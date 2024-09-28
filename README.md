@@ -7,7 +7,7 @@ This project aims to predict groundwater levels using date features and the Ligh
 
 1. **Data Cleaning Process**:<br>
    - Download the ehyd_messstellen_all_gw.zip file at https://ehyd.gv.at<br>
-   - Unzip and rename the Grundwasserstand-Monatsmittel folder which contains 'Monthly Average Groundwater Level' data. To excecute this on the CLI, use: `mv Grundwasserstand-Monatsmittel Monthly_Average_Groundwater_Level`<br>
+   - Unzip and rename the Grundwasserstand-Monatsmittel folder which contains 'Monthly Average Groundwater Level' data. To excecute this on the CLI, use: <span style="background-color: yellow;">`mv Grundwasserstand-Monatsmittel Monthly_Average_Groundwater_Level`</span><br>
    - Inside the same directory where the Monthly Average Groundwater Level directory is located, make two new directories    (487_sampling_points, 487_sampling_points_cleaned) using the following commands on the CLI: `mkdir 487_sampling_points` and `mkdir 487_sampling_points_cleaned` respectively.<br>
    - Rename the data for each sampling point by running rename.py : `python rename.py`<br>
    - To filter the data for only the 487 sampling points, run move.sh: `bash move.sh` or `./move.sh`. The output will be moved to the '487_sampling_points' directory.<br>
