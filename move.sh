@@ -6,7 +6,5 @@ for id in "${list[@]}"
 do
     if [[ -f "Monthly_Average_Groundwater_Level/$id.csv" ]]; then
         cp "Monthly_Average_Groundwater_Level/$id.csv" ./487_sampling_points
-    else
-        echo "File $id.csv not found, skipping..."
     fi
 done
