@@ -52,7 +52,7 @@ This project aims to predict groundwater levels using date features and the Ligh
 
 ## TASK 2
 **Identify exogenous variables for forecasting GRACE time series**
-A Markdown Guide to run the codes for task 2 is well documented in the colab script <br><br>`supplemental_material_for_task_2/Task2_GRACE_ERA5_Exogenous_var.ipynb`<br><br> file.
+A Markdown Guide to run the codes for task 2 is well documented in the colab script `supplemental_material_for_task_2/Task2_GRACE_ERA5_Exogenous_var.ipynb` file.
 This is documented under the following steps:
 - GRACE Data Sorting
 - Exogenous Variables Sorting
