@@ -48,3 +48,18 @@ This project aims to predict groundwater levels using date features and the Ligh
 
 2. **Run the Cells**:
    - After adjusting the variables, run all the other cells in this section. Running the last cell will return and save a spreadsheet of forecasted groundwater levels between the specified start and end dates.
+
+
+## TASK 2
+**Identify exogenous variables for forecasting GRACE time series**
+A Markdown Guide to run the codes for task 2 is well documented in the colab script `(supplemental_material_for_task_2/Task2_GRACE_ERA5_Exogenous_var.ipynb)` file.
+This is documented under the following steps:
+- GRACE Data Sorting
+- Exogenous Variables Sorting
+- Data Merging - GRACE and ERA5
+- Data Visualisation
+- Multiple Model Trainings
+- Model Evaluation
+- Identifying Predictive power of Exogenous Variables
+- Test: Performance of Model after removing non-essential variables
+- Findings
