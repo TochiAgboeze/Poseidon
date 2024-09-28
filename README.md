@@ -9,12 +9,13 @@ This project aims to predict groundwater levels using date features and the Ligh
    - Download the ehyd_messstellen_all_gw.zip file (groundwater data) at https://ehyd.gv.at<br>
    - Unzip and rename the Grundwasserstand-Monatsmittel folder which contains 'Monthly Average Groundwater Level' data. To excecute this on the CLI, use:<br><br> `mv Grundwasserstand-Monatsmittel Monthly_Average_Groundwater_Level`<br><br>
    - Inside the same directory where the Monthly Average Groundwater Level directory is located, make two new directories    (487_sampling_points, 487_sampling_points_cleaned) using the following commands on the CLI: <br><br>`mkdir 487_sampling_points`<br><br>`mkdir 487_sampling_points_cleaned`<br><br>
-   - Rename the data for each sampling point by running 'rename.py' : <br><br>`python rename.py`<br><br>
-   - To filter the data for only the 487 sampling points, run 'move.sh': <br><br>`bash move.sh` or `./move.sh`<br><br>The output will be moved to the **`487_sampling_points`** directory.<br>
-   - Clean the 487 sampling points' data to get the metadata (months and groundwater levels) by running 'clean_487.py': <br><br>`python clean_487.py`<br><br> The output will be moved to the **`487_sampling_points_cleaned`** directory.
+**NB: Make sure the following are located within the directory:**
+<br>`Monthly_Average_Groundwater_Level` - directory<br>`rename.py`<br>`clean_487.py`<br>`move.sh`<br>`487_sampling_points` - directory<br>`487_sampling_points_cleaned` <br>`sampling_points_ids.txt`- This contains the IDs of the 487 sampling points<br>
 
-**Make sure the following files are located within the directory:**
-<br>`rename.py`<br>`clean_487.py`<br>`move.sh`<br>`sampling_points_ids.txt` (This contains the IDs of the 487 sampling points)<br>
+   - Rename the data for each sampling point by running 'rename.py' : <br><br>`python rename.py`<br><br>
+   - To filter the data for only the 487 sampling points, run 'move.sh': <br>`bash move.sh` or `./move.sh` - The output will be moved to the **`487_sampling_points`** directory.<br><br>
+   - Clean the 487 sampling points' data to get the metadata (months and groundwater levels) by running 'clean_487.py':<br>`python clean_487.py` - The output will be moved to the **`487_sampling_points_cleaned`** directory.
+
 
 2. **Feature Extraction and LightGBM Model**: 
    - This section performs datetime feature extraction, then trains and tests a LightGBM model using the cleaned data.
