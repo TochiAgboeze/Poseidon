@@ -3,7 +3,7 @@
 
 This project aims to predict groundwater levels using date features and the LightGBM model. The source code is provided as a Jupyter Notebook file, divided into the following sections:
 
-## Sections of the Notebook
+## TASK 1
 
 1. **Data Cleaning Process**:<br>
    - Download the `ehyd_messstellen_all_gw.zip` file (groundwater data) at https://ehyd.gv.at<br>
@@ -16,7 +16,7 @@ This project aims to predict groundwater levels using date features and the Ligh
    - To filter the data for only the 487 sampling points, run 'move.sh': <br>`bash move.sh` or `./move.sh` - The output will be moved to the **`487_sampling_points`** directory.<br><br>
    - Clean the 487 sampling points' data to get the metadata (months and groundwater levels) by running 'clean_487.py':<br>`python clean_487.py` - The output will be moved to the **`487_sampling_points_cleaned`** directory.
 
-
+## Sections of the Notebook
 2. **Feature Extraction and LightGBM Model**: 
    - This section performs datetime feature extraction, then trains and tests a LightGBM model using the cleaned data.
 
