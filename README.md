@@ -1,4 +1,4 @@
-# Poseidon
+# Team Poseidon
 # Groundwater Level Prediction Project
 
 This project aims to predict groundwater levels using date features and the LightGBM model. The source code is provided as a Jupyter Notebook file, divided into the following sections:
