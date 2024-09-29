@@ -8,7 +8,7 @@ This project aims to predict groundwater levels using date features and the Ligh
 ## Sections of the Notebook:
 1. **Data Cleaning Process**:
     - This section contains the code to clean the datasets and prepare them for downstream analysis.
-    - 
+      
 2. **Feature Extraction and LightGBM Model**: 
    - This section performs datetime feature extraction, then trains and tests a LightGBM model using the cleaned data.
 
