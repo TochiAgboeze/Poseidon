@@ -1,0 +1,33 @@
+# Groundwater Level Prediction Project
+
+This project aims to predict groundwater levels using date features and the LightGBM model. The source code is provided as a Jupyter Notebook file, divided into the following sections:
+
+### Sections of the Notebook
+
+1. **Data Cleaning Process**: This section contains the code to clean the datasets and prepare them for downstream analysis.
+2. **Feature Extraction and LightGBM Model**: This section performs datetime feature extraction, then trains and tests a LightGBM model using the cleaned data.
+3. **Forecast for 2022-2024 Feb**: This section extracts features from the datasets, trains the model, and makes forecasts for submission.
+4. **Train and Make Predictions for Specific Geographic Locations**: This section contains code to train and make forecasts for any specific geographic location.
+
+### How to Run the Source Code
+
+1. **Set the Folder Path**:
+   - Change the variable named `folder_path` to the path containing the CSV files you want to train and make predictions on. Note that we have limited this folder to contain just the 487 samples for which predictions are to be made.
+
+2. **Run the Data Cleaning and Feature Extraction Sections**:
+   - Run all the cells in the Data Cleaning Process section.
+   - Run all the cells in the Feature Extraction and LightGBM Model section. This will return the SMAPE score of the model on the entire dataset, showing the model's performance.
+
+3. **Make Forecasts for 2022-2024 Feb**:
+   - Run all the cells in the Forecast for 2022-2024 Feb section without changing anything. This will return and save a spreadsheet containing IDs and forecasts from 2022-2024 for the sites in the folder uploaded.
+
+### How to Train and Make Forecasts for a Specific Geographic Location
+
+1. **Adjust Variables**:
+   - In the first cell of this section, adjust the following three variables:
+     - `file_path`: Set this to the file path of the raw dataset containing the specific location.
+     - `start_date`: Set this to the start date for forecasts in the format YYYY-MM-DD.
+     - `end_date`: Set this to the last forecast date in the format YYYY-MM-DD.
+
+2. **Run the Cells**:
+   - After adjusting the variables, run all the other cells in this section. Running the last cell will return and save a spreadsheet of forecasted groundwater levels between the specified start and end dates.
