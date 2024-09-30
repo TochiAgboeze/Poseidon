@@ -39,7 +39,53 @@ This project aims to predict groundwater levels using date features and the Ligh
 2. **Run the Cells**:
    - After adjusting the variables, run all the other cells in this section. Running the last cell will return and save a spreadsheet of forecasted groundwater levels between the specified start and end dates. <br><br>
 
-**`NOTE:`** During model exploration for task 1, we initially experimented with linear regression, which achieved a SMAPE score of 0.13. However, we chose the LightGBM model which provided slightly better performance (0.12).<br><br>
+## Predictive Analytics Methodologies for TASK 1
+
+### Introduction
+This report presents a comparative analysis of two predictive analytics methodologies applied to the dataset for forecasting purposes. The methodologies implemented are the Window Framing Method and the Feature Extraction Method. The performance of various machine learning models was evaluated using the Symmetric Mean Absolute Percentage Error (SMAPE) score.
+
+### Methodologies
+
+#### 1. Window Framing Method
+1. **Description**: In this approach, the dataset was split into a window frame of 3 timesteps. This means that the data was segmented into overlapping windows, each containing three consecutive time points.
+2. **Test Dataset**: The dataset from the year 01-11-2019 to 01-12-2021 was used as the test dataset.
+3. **Models Used**: Various machine learning algorithms were applied to this windowed data to predict future values.
+
+#### 2. Feature Extraction Method
+1. **Description**: In this approach, additional features were extracted from the date feature. These features included day, day of the week, month, year, and quarter.
+2. **Feature Engineering**: The extracted features were used to train different machine learning models, aiming to improve the predictive performance.
+3. **Test Dataset**: The dataset from the year 01-11-2019 to 01-12-2021 was used as the test dataset.
+4. **Models Used**: Various machine learning algorithms were applied to this windowed data to predict future values.
+
+
+### Results
+The table below summarizes the SMAPE scores for each model using both methodologies:
+
+| Model             | Window Sliding SMAPE Score | Feature Extraction SMAPE Score |
+|-------------------|----------------------------|--------------------------------|
+| Decision Tree     | 0.175777226                | 0.136648929                    |
+| Random Forest     | 0.155971905                | 0.126089096                    |
+| Linear Regression | 0.138594464                | 0.173424928                    |
+| Gradient Boosting | 0.139667607                | 0.12958155                     |
+| Neural Network    | 6.59628559                 | 2.416215092                    |
+| XGBoost           | 0.162519258                | 0.13342507                     |
+| LightGBM          | 0.156632604                | 0.120822192                    |
+| CatBoost          | 0.150084579                | 0.130839256                    |
+
+### Analysis
+- **Decision Tree**: The Feature Extraction Method significantly improved the SMAPE score compared to the Window Sliding Method.
+- **Random Forest**: Similar to the Decision Tree, the Feature Extraction Method yielded a better SMAPE score.
+- **Linear Regression**: Interestingly, the Window Sliding Method performed better than the Feature Extraction Method for Linear Regression.
+- **Gradient Boosting**: The Feature Extraction Method slightly outperformed the Window Sliding Method.
+- **Neural Network**: Both methods resulted in high SMAPE scores, but the Feature Extraction Method was notably better.
+- **XGBoost**: The Feature Extraction Method provided a better SMAPE score.
+- **LightGBM**: This model showed the best performance with the Feature Extraction Method.
+- **CatBoost**: The Feature Extraction Method also improved the performance for CatBoost.
+
+ ## Conclusion: The best performing methodology is feature extraction with the LightGBM model.
+
+
+
 
 ## TASK 2
 **Identify exogenous variables for forecasting GRACE time series**<br>
