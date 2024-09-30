@@ -55,7 +55,7 @@ This report presents a comparative analysis of two predictive analytics methodol
 1. **Description**: In this approach, additional features were extracted from the date feature. These features included day, day of the week, month, year, and quarter.
 2. **Feature Engineering**: The extracted features were used to train different machine learning models, aiming to improve the predictive performance.
 3. **Test Dataset**: The dataset from the year 01-11-2019 to 01-12-2021 was used as the test dataset.
-4. **Models Used**: Various machine learning algorithms were applied to this windowed data to predict future values.
+4. **Models Used**: Various machine learning algorithms were applied to these features to predict future values.
 
 
 ### Results
