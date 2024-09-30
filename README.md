@@ -55,4 +55,4 @@ This is documented under the following steps:
 - Test: Performance of Model after removing non-essential variables
 - Findings <br><br>
 
-**`NOTE:`** Due to the large size of the dataset, we used 5 different globally representative batches (1% each) of the data. This ensured the reliability and generalizability of our approach, preventing overdependence on any specific subset of the data. Each batch yielded similar outputs, reinforcing the validity of our findings.
+**`NOTE:`** Due to the large size of the dataset, we used 5 different globally representative batches (1% each) of the data. This ensured the reliability and generalizability of our approach, preventing overdependence on any specific subset of the data. Each batch yielded highly similar outputs, reinforcing the validity of our findings.
