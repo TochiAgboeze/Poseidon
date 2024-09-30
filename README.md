@@ -82,14 +82,14 @@ The table below summarizes the SMAPE scores for each model using both methodolog
 - **LightGBM**: This model showed the best performance with the Feature Extraction Method.
 - **CatBoost**: The Feature Extraction Method also improved the performance for CatBoost.
 
- ## Conclusion: The best performing methodology is feature extraction with the LightGBM model.
+ ## Conclusion: The best performing methodology is feature extraction with the LightGBM model
 
 
 
 
 ## TASK 2
 **Identify exogenous variables for forecasting GRACE time series**<br>
-A Markdown guide to run the codes for task 2 is well documented in the colab script `supplemental_material_for_task_2/Task2_GRACE_ERA5_Exogenous_var.ipynb`. <br><br>
+A Markdown guide to run the codes for task 2 is well documented in the colab script `supplemental_material_for_task_2/Task_2_GRACE_ERA5_Exogenous_var.ipynb`. <br><br>
 This is documented under the following steps:
 - GRACE Data Sorting
 - Exogenous Variables Sorting
