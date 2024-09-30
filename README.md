@@ -101,4 +101,5 @@ This is documented under the following steps:
 - Test: Performance of Model after Removing Non-essential Variables
 - Findings <br><br>
 
+Data source for the ERA5 can be found here (https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means?tab=overview)
 **`NOTE:`** Due to limited compute power and the intensive demand of our best performing model, we worked with numerous batches of 1% of the dataset by changing the random_state values for each model iteration (hence, multiple batches of 1% with shape (805105,14) each). The metric score for all the multiple 1% datasets were highly similar with minimal variances, reinforcing the validity of our findings. The average of the metrics was used in the final output. This ensured the reliability and generalizability of our approach to globally represent the dataset while preventing overdependence on any specific subset of the data. 
