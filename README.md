@@ -39,7 +39,7 @@ This project aims to predict groundwater levels using date features and the Ligh
 2. **Run the Cells**:
    - After adjusting the variables, run all the other cells in this section. Running the last cell will return and save a spreadsheet of forecasted groundwater levels between the specified start and end dates. <br><br>
 
-**`NOTE:`** During model Exploration for task 1, we initially experimented with linear regression, which achieved a SMAPE score of 0.13. However, we chose the LightGBM model which provided slightly better performance (0.12).<br><br>
+**`NOTE:`** During model exploration for task 1, we initially experimented with linear regression, which achieved a SMAPE score of 0.13. However, we chose the LightGBM model which provided slightly better performance (0.12).<br><br>
 
 ## TASK 2
 **Identify exogenous variables for forecasting GRACE time series**<br>
